@@ -12,8 +12,10 @@ function App() {
   return (
     <Router>
       <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<LayOut />}>
+          <Route index element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
+        </Route>
       </Routes>
     </Router>
   );
